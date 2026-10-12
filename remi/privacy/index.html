@@ -39,7 +39,7 @@
 <h2>1. Who we are</h2>
 <p>Remi is operated by <strong>GONG (gonglab)</strong>, a sole proprietorship registered in the Republic of Korea (business registration no. 338-07-01261), represented by Gahyeon Jang. We are the data controller for the personal data described here.</p>
 <ul>
-  <li>Address: 914-1103, 311 Hwasin-ro, Deogyang-gu, Goyang-si, Gyeonggi-do <span class="todo">[POSTAL CODE]</span>, Republic of Korea</li>
+  <li>Address: 914-1103, 311 Hwasin-ro, Deogyang-gu, Goyang-si, Gyeonggi-do 10502, Republic of Korea</li>
   <li>Email: <a href="mailto:helloworld@gonglab.app">helloworld@gonglab.app</a></li>
   <li>EU representative (GDPR Art. 27): <span class="todo">[NAME, ADDRESS, EMAIL]</span></li>
 </ul>
@@ -50,13 +50,14 @@
 <h2>3. What we collect</h2>
 <table>
   <tr><th>Category</th><th>What it includes</th><th>Where it comes from</th></tr>
-  <tr><td>Account</td><td>Google account identifier, <span class="todo">[email address — confirm]</span></td><td>Google Sign-In</td></tr>
+  <tr><td>Account</td><td>Account identifier and email address</td><td>Sign in with Google or Sign in with Apple</td></tr>
   <tr><td>Profile</td><td>The name you give, date of birth, interests you pick</td><td>You, during onboarding</td></tr>
   <tr><td>Conversations</td><td>Messages you send and receive, and memories derived from them (summaries, facts your friends learned about you, and search indexes of past messages)</td><td>Your use of the app</td></tr>
   <tr><td>Notifications</td><td>Push notification token, your notification settings</td><td>Your device</td></tr>
   <tr><td>Safety</td><td>Reports and blocks you submit</td><td>You</td></tr>
-  <tr><td>Technical</td><td>Device type, OS version, app version, <span class="todo">[crash and usage analytics — confirm tools]</span></td><td>Your device</td></tr>
+  <tr><td>Technical</td><td>IP address and basic request logs on our server, used to keep the service running and secure</td><td>Your device</td></tr>
 </table>
+<p>We do not use analytics, advertising or crash-reporting tools.</p>
 <p>Please think before sharing sensitive details such as health, religion or sexual life in chats. If you share them, we store them as part of your conversations so your friends can remember them, and we treat them with the same protections as the rest of your data. You can delete them at any time by deleting your account.</p>
 
 <h2>4. Why we use it</h2>
@@ -77,20 +78,21 @@
 <p>We share data only with service providers that help us run Remi, under contracts that limit their use of it:</p>
 <table>
   <tr><th>Provider</th><th>Purpose</th><th>Location</th></tr>
-  <tr><td>Google (Firebase / Google Sign-In)</td><td>Sign-in, push notifications</td><td><span class="todo">[REGION]</span></td></tr>
-  <tr><td><span class="todo">[HOSTING PROVIDER]</span></td><td>Servers and database</td><td><span class="todo">[REGION]</span></td></tr>
-  <tr><td><span class="todo">[AI MODEL PROVIDER, or "none — self-hosted"]</span></td><td>Generating replies</td><td><span class="todo">[REGION]</span></td></tr>
-  <tr><td>Apple</td><td>Push notification delivery on iOS</td><td>United States</td></tr>
+  <tr><td>Hetzner Online GmbH</td><td>Server and database. All of your data is stored here.</td><td>Germany (EU)</td></tr>
+  <tr><td>OpenRouter and DeepInfra</td><td>Running the AI model (Google Gemma) that writes your friends' replies</td><td>United States</td></tr>
+  <tr><td>Google (Sign in with Google, Firebase Cloud Messaging)</td><td>Sign-in and push notifications</td><td>United States</td></tr>
+  <tr><td>Apple (Sign in with Apple, Apple Push Notification service)</td><td>Sign-in and push notifications on iOS</td><td>United States</td></tr>
 </table>
+<p>To write a reply, we send the AI model the recent conversation and the relevant memories. We do not send your email address or account identifiers. We use a zero-data-retention route, so the AI providers do not store the content they process for us or use it to train their models.</p>
 <p>We may also disclose data if required by law, or to protect someone's safety.</p>
 
 <h2>6. International transfers</h2>
-<p>We are based in Korea and some providers process data outside your country. The European Commission has recognised Korea as providing adequate protection for personal data. For other transfers we rely on Standard Contractual Clauses or another lawful transfer mechanism. <span class="todo">[Confirm once hosting and AI regions are known.]</span></p>
+<p>Your data is stored in Germany. Some of it is processed in the United States by the providers above, and we access it from Korea, where we are based. The European Commission has recognised Korea as providing adequate protection for personal data. For transfers to the United States we rely on the EU-U.S. Data Privacy Framework where the provider is certified, and otherwise on the European Commission's Standard Contractual Clauses.</p>
 
 <h2>7. How long we keep it</h2>
 <ul>
   <li>Account, profile and conversations: until you delete your account.</li>
-  <li>After deletion: removed from live systems right away and from backups within <span class="todo">[N]</span> days.</li>
+  <li>After deletion: removed from the live database right away. Backups are rotated out within 6 months.</li>
   <li>Reports: up to <span class="todo">[N]</span> months, to deal with repeat abuse.</li>
   <li>Data we must keep by law: for the period the law requires.</li>
 </ul>
