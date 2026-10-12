@@ -50,7 +50,7 @@
 <table>
   <tr><th>Category</th><th>What it includes</th><th>Where it comes from</th></tr>
   <tr><td>Account</td><td>Account identifier and email address</td><td>Sign in with Google or Sign in with Apple</td></tr>
-  <tr><td>Profile</td><td>The name you give, date of birth, interests you pick</td><td>You, during onboarding</td></tr>
+  <tr><td>Profile</td><td>The name you give, date of birth, job, country and interests you pick</td><td>You, during onboarding</td></tr>
   <tr><td>Conversations</td><td>Messages you send and receive, and memories derived from them (summaries, facts your friends learned about you, and search indexes of past messages)</td><td>Your use of the app</td></tr>
   <tr><td>Notifications</td><td>Push notification token, your notification settings</td><td>Your device</td></tr>
   <tr><td>Safety</td><td>Reports and blocks you submit</td><td>You</td></tr>
@@ -58,6 +58,7 @@
   <tr><td>Technical</td><td>IP address and basic request logs on our server, used to keep the service running and secure</td><td>Your device</td></tr>
 </table>
 <p>We do not use analytics, advertising or crash-reporting tools.</p>
+<p><strong>Email.</strong> We store the email address you sign in with (provided by Sign in with Apple or Google). We use it to create and secure your account, to help you recover access, and to reply when you contact support. We do not use it for marketing unless you opt in. We do not send it to the AI model. It is deleted when you delete your account, and from backups within 6 months.</p>
 <p>Please think before sharing sensitive details such as health, religion or sexual life in chats. If you share them, we store them as part of your conversations so your friends can remember them, and we treat them with the same protections as the rest of your data. You can delete them at any time by deleting your account.</p>
 
 <h2>4. Why we use it</h2>
@@ -79,16 +80,17 @@
 <p>We share data only with service providers that help us run Remi, under contracts that limit their use of it:</p>
 <table>
   <tr><th>Provider</th><th>Purpose</th><th>Location</th></tr>
-  <tr><td>Hetzner Online GmbH</td><td>Server and database. All of your data is stored here.</td><td>Germany (EU)</td></tr>
+  <tr><td>Hetzner Online GmbH</td><td>Server and database</td><td>Germany (EU)</td></tr>
   <tr><td>OpenRouter and DeepInfra</td><td>Running the AI model (Google Gemma) that writes your friends' replies</td><td>United States</td></tr>
   <tr><td>Google (Sign in with Google, Firebase Cloud Messaging)</td><td>Sign-in and push notifications</td><td>United States</td></tr>
   <tr><td>Apple (Sign in with Apple, Apple Push Notification service)</td><td>Sign-in and push notifications on iOS</td><td>United States</td></tr>
 </table>
-<p>To write a reply, we send the AI model the recent conversation, the relevant memories, the name you gave us, and the description of the AI friend you are talking with. We do not send your email address or account identifiers. We use a zero-data-retention route, so the AI providers do not store the content they process for us or use it to train their models.</p>
+<p><strong>What we send to the AI model.</strong> To generate a reply we send your message, the recent conversation, relevant memories (things you told the friend in chat), and the friend's character description. The profile details you enter at sign-up (name, job, interests, country) are not sent to the model unless you say them in a message. We do not send your account identifiers, date of birth or email address. We use a zero-data-retention route, so the AI providers do not store the content they process for us or use it to train their models.</p>
 <p>We may also disclose data if required by law, or to protect someone's safety.</p>
 
 <h2>6. International transfers</h2>
-<p>Your data is stored in Germany. Some of it is processed in the United States by the providers above, and we access it from Korea, where we are based. The European Commission has recognised Korea as providing adequate protection for personal data. For transfers to the United States we rely on the EU-U.S. Data Privacy Framework where the provider is certified, and otherwise on the European Commission's Standard Contractual Clauses.</p>
+<p><strong>Where your data is stored.</strong> Your account, conversations and memories are stored on a server operated for us by Hetzner Online GmbH in Germany (EU). Backup copies of the database are kept on the operator's own computer, which uses full-disk encryption. Backup copies are rotated out within 6 months; when you delete your account, your data is removed from the live database immediately and from backups within 6 months.</p>
+<p>Some of your data is processed in the United States by the providers above, and we access it from Korea, where we are based. The European Commission has recognised Korea as providing adequate protection for personal data. For transfers to the United States we rely on the EU-U.S. Data Privacy Framework where the provider is certified, and otherwise on the European Commission's Standard Contractual Clauses.</p>
 
 <h2>7. How long we keep it</h2>
 <ul>
